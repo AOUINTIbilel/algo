@@ -1,0 +1,30 @@
+PROCEDURE Dot product(v1,v2 : ARRAY_OF INTEGER [] , var vec : INTEGER;)
+VAR
+    i : INTEGER;
+BEGIN
+    vec := 0;
+    i:= 0;
+    IF (v1.length<>v2.length) THEN
+        write ("Ne pouves pas calculer les vecteurs avec des tailles différentes")
+        vec = Nnbre;
+    END_IF
+    WHILE (i<v1.length) DO
+        vec = vec+v1[i] * v2[i];
+    END_WHILE
+END
+ALGORITHM algo_det
+VAR
+    v1 , v2 : ARRAY_OF INTEGER[50];
+    vec : INTEGER;
+BEGIN
+    n1 = read_size();
+    read_array(n1,v1)
+    n2 = read_size();
+    read_array(n2,v2)
+    vec_product(v1,v2, vec)
+    IF (vec = 0) THEN
+        write (" v1 et v2 sont orthogonal");
+        else
+        write ("v1 et v2 ne sont pas orthogonal");
+    END_IF
+END
