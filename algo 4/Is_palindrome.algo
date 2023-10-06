@@ -1,0 +1,15 @@
+FUNCTION Is_palindrome(VAR str : STRING) : BOOLEAN
+VAR
+i,j:= INTEGER;
+pal = BOOLEAN
+BEGIN
+    str := "";
+    FOR i FROM 0 TO str.length-1 STEP 1  DO
+    IF (str[i]= str[j-1];) THEN
+        pal = true
+        END_IF
+        i = i+1;
+        j=j-1;
+        END_FOR
+        RETURN pal ;
+END
